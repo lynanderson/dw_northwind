@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
@@ -36,3 +37,5 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
+=======
+>>>>>>> 7dc584e539dd47dce5d33bc29e543070fc115fc6

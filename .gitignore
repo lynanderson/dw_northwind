@@ -1,4 +1,7 @@
 
+<<<<<<< HEAD
 target/
 dbt_packages/
 logs/
+=======
+>>>>>>> 7dc584e539dd47dce5d33bc29e543070fc115fc6
