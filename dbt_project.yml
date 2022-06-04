@@ -1,9 +1,7 @@
-
-<<<<<<< HEAD
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'my_new_project'
+name: 'dw_northwind'
 version: '1.0.0'
 config-version: 2
 
@@ -33,9 +31,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  my_new_project:
+  dw_northwind:
     # Applies to all files under models/example/
-    example:
+    staging:
       materialized: view
-=======
->>>>>>> 7dc584e539dd47dce5d33bc29e543070fc115fc6
+    marts:
+      materialized: table
