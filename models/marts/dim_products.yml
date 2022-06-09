@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: Tabela que contem os dados de produto
+    columns:
+              
+      - name: codigo_produto
+        description: Código do produto
+        tests:
+          - not_null
+          - unique
+
+      - name: produto_sk
+        description: Códido surrogate do produto
+        tests:
+          - not_null
+          - unique
+
+      - name: descricao_produto
+        description: Descrição do produto
+
+      - name: codigo_fornecedor
+        description: Código do fornecedor
+
+      - name: nome_fornecedor
+        description: Nome do fornecedor
+      
+      - name: contato_fornecedor
+        description: Código do fornecedor
+
+      - name: endereco_fornecedor
+        description: Contato do fornecedor        
+
+      - name: cidade_fornecedor
+        description: Cidade do fornecedor 
+
+      - name: estado_fornecedor
+        description: Estado do fornecedor
+
+      - name: codigo_postal_fornecedor
+        description: CEP do fornecedor
+
+      - name: estado_fornecedor
+        description: Estado do fornecedor
+
+      - name: pais_fornecedor
+        description: País do fornecedor
+
+      - name: telefone_fornecedor
+        description: Telefone do fornecedor
+
+      - name: quantidade_unitaria
+        description: Unidade na qual o produto é vendido
+        
+      - name: telefone_fornecedor
+        description: Telefone do fornecedor
+
+      - name: valor_unitario
+        description: Valor unitário do produto
+
+      - name: estoque_atual
+        description: Estoque atual do produto
+
+      - name: quantidade_em_pedido
+        description: Quantidade que se encontra em pedido
+
+      - name: status_protudo
+        description: Status do produto
+        tests:
+        - accepted_values:
+            values: ['Ativo', 'Inativo']
+
+      - name: codigo_categoria
+        description: Código da categoria
+
+      - name: nome_categoria
+        description: Nome da categoria 
+
+      - name: descricao_categoria
+        description: Descrição da categoria                                                                                                

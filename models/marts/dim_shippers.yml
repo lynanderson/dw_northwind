@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: dim_shippers
+    description: Tabela que contem os dados de transportadora
+    columns:
+              
+      - name: codigo_transportadora
+        description: Código da transportadora
+        tests:
+          - not_null
+          - unique
+
+      - name: shippers_sk
+        description: Código surrogate da transportadora
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_transportadora
+        description: Nome da transportadora
+
+      - name: telefone_transportadora
+        description: Telefone da transportadora

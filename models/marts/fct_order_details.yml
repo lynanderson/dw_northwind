@@ -1,0 +1,183 @@
+version: 2
+
+models:
+  - name: fct_order_details
+    description: Tabela que contem os dados dos pedidos de venda
+    columns:
+              
+      - name: codigo_pedido
+        description: Código do pedido
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_order_details')
+              field: codigo_pedido
+
+      - name: data_emissao
+        description: Data de emissão do pedido
+
+      - name: data_embarque
+        description: Data que a mercadoria embarcou
+
+      - name: data_entrega
+        description: Data que ocorreu a entrega da mercadoria
+
+      - name: codigo_produto
+        description: Código do produto
+        tests:
+           - not_null
+
+      - name: descricao_produto
+        description: Descrição do produto
+
+      - name: quantidade_do_pedido
+        description: Quantidade solicitada para compra
+
+      - name: valor_unitario
+        description: Valor unitário do produto
+        
+      - name: desconto
+        description: Desconto em valor
+
+      - name: quantidade_unitaria
+        description: Unidade na qual o produto é vendido
+
+      - name: estoque_atual
+        description: Estoque atual do produto
+
+      - name: status_protudo
+        description: Status do produto
+
+      - name: carga
+        description: Volume transportado
+
+      - name: codigo_fornecedor
+        description: Código do fornecedor
+        tests:
+            - not_null
+
+      - name: nome_fornecedor
+        description: Nome do fornecedor
+
+      - name: contato_fornecedor
+        description: Contato do fornecedor
+
+      - name: endereco_fornecedor
+        description: Endereço do fornecedor
+
+      - name: cidade_fornecedor
+        description: Cidade do fornecedor
+
+      - name: estado_fornecedor
+        description: Estado do fornecedor
+
+      - name: codigo_postal_fornecedor
+        description: CEP do fornecedor
+
+      - name: pais_fornecedor
+        description: País do fornecedor
+
+      - name: telefone_fornecedor
+        description: Telefone do fornecedor
+
+      - name: codigo_categoria
+        description: Código da categoria
+
+      - name: nome_categoria
+        description: Nome da categoria
+
+      - name: descricao_categoria
+        description: Descrição da categoria
+
+      - name: codigo_cliente
+        description: Código do cliente
+        tests:
+            - not_null
+
+      - name: nome_cliente
+        description: Nome do cliente
+
+      - name: contato_cliente
+        description: Contato do cliente
+
+      - name: endereco_cliente
+        description: Endereço do cliente
+
+      - name: cidade_cliente
+        description: Cidade do cliente
+
+      - name: estado_cliente
+        description: Estado do cliente
+
+      - name: codigo_postal_cliente
+        description: CEP do cliente
+
+      - name: pais_cliente
+        description: País do cliente
+
+      - name: telefone_cliente
+        description: Telefone do cliente
+
+      - name: codigo_funcionario
+        description: Código do funcionario
+        tests:
+            - not_null
+
+      - name: nome_funcionario
+        description: Nome do funcionario
+        
+      - name: sobrenome_funcionario
+        description: Solbrenome do funcionario
+
+      - name: data_nascimento_funcionario
+        description: Data de nascimento do funcionario
+
+      - name: data_contratacao_funcionario
+        description: Data de contratação do funcionario
+
+      - name: endereco_funcionario
+        description: Endereço do funcionario
+
+      - name: cidade_funcionario
+        description: Cidade do funcionario
+
+      - name: estado_funcionario
+        description: Estado do funcionario
+
+      - name: codigo_postal_funcionario
+        description: CEP do funcionario
+
+      - name: pais_funcionario
+        description: País do funcionario
+
+      - name: telefone_funcionario
+        description: Telefone do funcionario
+
+      - name: codigo_transportadora
+        description: Código da transportadora
+        tests:
+            - not_null
+
+      - name: nome_transportadora
+        description: Nome da transportadora
+
+      - name: telefone_transportadora
+        description: Telefone da transportadora
+
+      - name: destinatario
+        description: Pessoa que irá receber a mercadoria
+
+      - name: local_entrega
+        description: Local de entrega
+
+      - name: cidade_entrega
+        description: Cidade de entrega
+
+      - name: estado_entrega
+        description: Estado da entrega
+
+      - name: codigo_postal_entrega
+        description: CEP da entrega
+
+      - name: pais_entrega
+        description: País da entrega

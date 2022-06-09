@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: Tabela que contem os dados de funcionário
+    columns:
+              
+      - name: codigo_funcionario
+        description: Código do funcionario
+        tests:
+          - not_null
+          - unique
+
+      - name: employees_sk
+        description: Código surrogate do funcionario
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_funcionario
+        description: Nome do funcionário
+
+      - name: sobrenome_funcionario
+        description: Sobrenome do funcionário
+
+      - name: data_nascimento_funcionario
+        description: Data de nascimento do funcionário
+
+      - name: data_contratacao_funcionario
+        description: Data de contratação do funcionário
+    
+      - name: endereco_funcionario
+        description: Endereço do funcionário
+
+      - name: cidade_funcionario
+        description: Cidade do funcionário
+
+      - name: estado_funcionario
+        description: Estado do funcionário
+
+      - name: codigo_postal_funcionario
+        description: CEP do funcionário
+
+      - name: pais_funcionario
+        description: País do funcionário
+
+      - name: telefone_funcionario
+        description: Telefone do funcionário

@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: dim_costumers
+    description: Tabela que contem os dados de cliente
+    columns:
+              
+      - name: codigo_cliente
+        description: Código do cliente
+        tests:
+          - not_null
+          - unique
+
+      - name: costumers_sk
+        description: Código surrogate do cliente
+        tests:
+          - not_null
+          - unique
+
+      - name: nome_cliente
+        description: Nome do cliente
+
+      - name: contato_cliente
+        description: Contato do cliente
+
+      - name: endereco_cliente
+        description: Endereço do cliente
+
+      - name: cidade_cliente
+        description: Cidade do cliente
+    
+      - name: estado_cliente
+        description: Estado do cliente
+
+      - name: codigo_postal_cliente
+        description: Cep do cliente
+
+      - name: pais_cliente
+        description: País do cliente
+
+      - name: telefone_cliente
+        description: Telefone do cliente
